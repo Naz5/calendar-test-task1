@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --primary-blue: #3B86FF;
+  --bg-light: #F5F6FA;
+  --text-main: #4D4F5C;
+  --text-muted: #94a3b8;
+  --border-color: #D7DAE2;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  color: var(--text-main);
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: var(--text-main);
+}
+
+button:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+button.active {
+  background-color: #fff;
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
